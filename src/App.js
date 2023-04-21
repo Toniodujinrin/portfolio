@@ -19,7 +19,7 @@ function App() {
   return (
     <div
       className="App bg-black
-     h-full w-screen min-h-screen"
+     h-full w-screen overflow-x-hidden min-h-screen"
     >
       <ToastContainer />
 

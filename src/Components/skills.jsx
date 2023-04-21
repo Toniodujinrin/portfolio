@@ -45,7 +45,7 @@ const Skills = () => {
     },
   ];
   return (
-    <div className="mb-[50px] lg:mt-[100px] mt-[30px] ">
+    <div className="mb-[50px] lg:mt-[100px] mt-[60px] ">
       <h1
         data-aos="fade-up"
         className="pl-4 mb-[50px] w-full flex items-center justify-center text-olive text-[18px] lg:text-[38px]"

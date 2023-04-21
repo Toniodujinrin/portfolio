@@ -9,7 +9,7 @@ const Hero = () => {
         src="../../terminal.svg"
         animate={{ rotate: 360 }}
         transition={{ repeat: Infinity, duration: 20 }}
-        className=" absolute left-[100px] lg:top-[-80px] top-[50px]  z-10 w-[100px] lg:w-[300px] h-[100px] lg:h-[300px]"
+        className=" absolute left-[10px] lg:top-[-80px] top-[50px]  z-10 w-[100px] lg:w-[300px] h-[100px] lg:h-[300px]"
         alt=""
       />
       <motion.img
