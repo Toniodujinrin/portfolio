@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+
 import axios from "axios";
 import { toast } from "react-toastify";
 
@@ -16,7 +16,7 @@ const Find = () => {
           "https://portfoliobackend-ne8b.onrender.com/message",
           payload
         );
-        if (status.status == 200) {
+        if (status.status === 200) {
           toast.success("Message Sent", {
             theme: "dark",
           });

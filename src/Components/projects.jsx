@@ -20,7 +20,7 @@ const Projects = () => {
         "This is a full stack task managment application with a custom made backend. ",
       textColor: "text-white",
       mainColor: "bg-[#ff9900]",
-      tools: ["Node.js", "Express", , "React", "Tailwind", "Mongo-DB"],
+      tools: ["Node.js", "Express", "React", "Tailwind", "Mongo-DB"],
       link: "https://timeline-ten.vercel.app/",
     },
     {
@@ -46,7 +46,7 @@ const Projects = () => {
           <div
             id={index}
             className={`flex  justify-between ${
-              index % 2 == 0 ? `flex-row` : `flex-row-reverse`
+              index % 2 === 0 ? `flex-row` : `flex-row-reverse`
             } `}
           >
             <div className="w-[50%] lg:block hidden"></div>

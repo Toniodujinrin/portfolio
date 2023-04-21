@@ -32,6 +32,7 @@ const Project = ({
 
         <a
           href={link}
+          rel="noreferrer"
           target="_blank"
           className="bg-mainGray flex justify-around mt-3 flex-row items-center text-white rounded-md p-2"
         >
