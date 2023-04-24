@@ -6,29 +6,65 @@ import Find from "./Components/findMe";
 import "aos/dist/aos.css";
 import Skills from "./Components/skills";
 import Aos from "aos";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import "react-toastify/dist/ReactToastify.css";
-
+import About from "./Components/about";
 import { ToastContainer } from "react-toastify";
 
 function App() {
   useEffect(() => {
     Aos.init();
   });
+  const [menu, setMenu] = useState(false);
+
   return (
     <div
-      className="App bg-black
-     h-full w-screen overflow-x-hidden min-h-screen"
+      className="App bg-black scroll-smooth
+     h-full  flex lg:flex-col flex-row-reverse w-screen overflow-x-hidden min-h-screen"
     >
-      <ToastContainer />
+      <div
+        className={`fixed z-50 w-[60%] ${
+          menu ? "flex" : "hidden"
+        } flex-col justify-center items-center bg-[#131313] h-screen `}
+      >
+        <ul className="text-olive cursor-pointer space-y-[30px] text-[18px] items-center flex flex-col ">
+          <a onClick={() => setMenu(false)} href="#about">
+            <li>About</li>
+          </a>
+          <a onClick={() => setMenu(false)} href="#skills">
+            <li>Skills</li>
+          </a>
+          <a onClick={() => setMenu(false)} href="#contact">
+            <li>Contact</li>
+          </a>
+          <a onClick={() => setMenu(false)} href="#projects">
+            <li>Projects</li>
+          </a>
+          <li className="h-[40px] w-[90px] flex items-center justify-center rounded-sm border border-aquamarine ">
+            <p className="text-aquamarine">Resume</p>
+          </li>
+        </ul>
+        <div
+          onClick={() => {
+            setMenu(false);
+          }}
+          className="w-[50px] mt-[35px] h-[50px] rounded-full border border-aquamarine flex items-center justify-center"
+        >
+          <img src="../../close.svg" className="w-[40px] h-[40px]" alt="" />
+        </div>
+      </div>
+      <div className={`${menu && "z-40 blur-2xl"}`}>
+        <ToastContainer />
 
-      <NavBar />
-      <Hero />
-      {/* <About /> */}
-      <Skills />
-      <Projects />
-      <Find />
+        <NavBar setMenu={setMenu} />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Find />
+        <ul></ul>
+      </div>
     </div>
   );
 }
