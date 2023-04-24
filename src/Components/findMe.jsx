@@ -40,7 +40,7 @@ const Find = () => {
     }
   };
   return (
-    <div id="contact" className="flex lg:p-8 p-4 flex-col">
+    <div id="contact" className="flex lg:p-8 p-8  flex-col">
       <h1
         data-aos="fade-up"
         className=" mb-[30px] lg:w-[60%] w-full flex flex-row space-x-2 items-center  border-b border-b-aquamarine  text-olive text-[24px] "

@@ -48,7 +48,7 @@ const Skills = () => {
   return (
     <motion.div
       id="skills"
-      className="lg:mb-[50px] mb-4 lg:p-8 p-4 lg:mt-[100px] mt-[60px] "
+      className="lg:mb-[50px] mb-4 lg:p-8 p-8 lg:mt-[100px] mt-[60px] "
     >
       <h1
         data-aos="fade-up"
@@ -60,7 +60,7 @@ const Skills = () => {
           src="../../logo.svg"
           alt=""
         />
-        <p>Skills in my locker</p>
+        <p>Skills In My Locker</p>
       </h1>
       <div
         data-aos="fade-up"

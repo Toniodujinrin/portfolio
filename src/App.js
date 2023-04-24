@@ -20,8 +20,10 @@ function App() {
 
   return (
     <div
-      className="App bg-black scroll-smooth
-     h-full  flex lg:flex-col flex-row-reverse w-screen overflow-x-hidden min-h-screen"
+      className={`App bg-black scroll-smooth
+     h-full  flex  ${
+       menu ? "flex-row-reverse" : "flex-col items-center"
+     } w-screen overflow-x-hidden min-h-screen`}
     >
       <div
         className={`fixed z-50 w-[60%] ${
