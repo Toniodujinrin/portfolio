@@ -1,5 +1,6 @@
 import React from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const skills = [
@@ -45,12 +46,21 @@ const Skills = () => {
     },
   ];
   return (
-    <div className="mb-[50px] lg:mt-[100px] mt-[60px] ">
+    <motion.div
+      id="skills"
+      className="lg:mb-[50px] mb-4 lg:p-8 p-4 lg:mt-[100px] mt-[60px] "
+    >
       <h1
         data-aos="fade-up"
-        className="pl-4 mb-[50px] w-full flex items-center justify-center text-olive text-[18px] lg:text-[38px]"
+        className=" mb-[50px] lg:w-[60%] w-full flex flex-row space-x-2 items-center  border-b border-b-aquamarine  text-olive text-[24px] "
       >
-        Skills in my locker
+        <motion.img
+          animate={{ rotate: 360 }}
+          transition={{ duration: 3, repeat: Infinity }}
+          src="../../logo.svg"
+          alt=""
+        />
+        <p>Skills in my locker</p>
       </h1>
       <div
         data-aos="fade-up"
@@ -93,7 +103,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

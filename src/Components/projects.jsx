@@ -1,5 +1,6 @@
 import React from "react";
 import Project from "./project";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const projects = [
@@ -12,6 +13,7 @@ const Projects = () => {
       mainColor: "bg-[#6b5ce5]",
       tools: ["React", "Tailwind"],
       link: "https://toniodujinrincommentsection.netlify.app/",
+      github: "https://github.com/Toniodujinrin",
     },
     {
       projectImage: "../../timeline.png",
@@ -22,6 +24,7 @@ const Projects = () => {
       mainColor: "bg-[#ff9900]",
       tools: ["Node.js", "Express", "React", "Tailwind", "Mongo-DB"],
       link: "https://timeline-ten.vercel.app/",
+      github: "https://github.com/Toniodujinrin/todoBackend",
     },
     {
       projectImage: "../../countries.png",
@@ -32,30 +35,35 @@ const Projects = () => {
       mainColor: "bg-[#f1f1f1]",
       tools: ["React", "CSS", "API's"],
       link: "https://toniodujinrincountriesapi.netlify.app/",
+      github: "https://github.com/Toniodujinrin/countries-",
     },
   ];
   return (
-    <div>
-      <div className="w-full flex justify-center mt-[100px] items-center mb-[40px]">
-        <h1 className="pl-4   text-olive text-[16px] lg:text-[38px] ">
-          Here are some of my projects
+    <div id="projects">
+      <div className="w-full flex  p-8 mt-4 lg:mt-[100px] items-center mb-[20px]">
+        <h1
+          data-aos="fade-up"
+          className=" lg:mb-[50px] lg:w-[60%] w-full flex flex-row space-x-2 items-center  border-b border-b-aquamarine  text-olive text-[24px] "
+        >
+          <motion.img
+            animate={{ rotate: 360 }}
+            transition={{ duration: 3, repeat: Infinity }}
+            src="../../logo.svg"
+            alt=""
+          />
+          <p>Selected Projects</p>
         </h1>
       </div>
-      <div className="w-full h-full p-4 flex flex-col    space-y-4  grid-cols-2">
+      <div className="w-full h-full p-4 flex flex-col items-center space-y-6   ">
         {projects.map((project, index) => (
-          <div
-            id={index}
-            className={`flex  justify-between ${
-              index % 2 === 0 ? `flex-row` : `flex-row-reverse`
-            } `}
-          >
-            <div className="w-[50%] lg:block hidden"></div>
+          <div id={index}>
             <div
               data-aos={"fade-up"}
               data-aos-duration="400"
-              className="lg:w-[50%] w-full "
+              className=" w-full "
             >
               <Project
+                github={project.github}
                 projectImage={project.projectImage}
                 mainColor={project.mainColor}
                 projectName={project.projectName}

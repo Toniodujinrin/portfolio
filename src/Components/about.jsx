@@ -3,26 +3,25 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="pl-4 lg:flex flex-row-reverse justify-between mt-[50px]">
-      <div className="w-[50%] ">
+    <div id="about" className="p-8">
+      <h1
+        data-aos="fade-up"
+        className=" mb-[50px] lg:w-[60%] w-full flex flex-row space-x-2 items-center  border-b border-b-aquamarine  text-olive text-[24px] "
+      >
         <motion.img
-          transition={{ repeat: Infinity, duration: 2 }}
-          animate={{
-            rotate: [
-              0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 40, 35, 30, 25, 20, 15, 10,
-              5, 0,
-            ],
-          }}
-          src="../../handwave.png"
+          animate={{ rotate: 360 }}
+          transition={{ duration: 3, repeat: Infinity }}
+          src="../../logo.svg"
           alt=""
         />
-      </div>
-      <div className="lg:w-[50%]">
-        <h1 className=" text-olive text-[18px] lg:text-[38px]">About Me</h1>
-        <p className="text-white">
-          Im a full stack developer, with experience in many modern tech stacks.
-        </p>
-      </div>
+        <p>About Me</p>
+      </h1>
+      <p className="text-white lg:w-[50%] w-full ">
+        Hey, my name is Toni. I love programmin and solving probles with
+        software. I started programming in 2021 and I absolutely fell in love
+        with it. I started out with building simple websites with HTML and CSS
+        for fun, and now I can build full stack web applications.
+      </p>
     </div>
   );
 };
