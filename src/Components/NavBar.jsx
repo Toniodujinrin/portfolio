@@ -3,8 +3,7 @@ import React from "react";
 const NavBar = ({ setMenu }) => {
   return (
     <nav
-      className={`w-full z-30 fixed flex backdrop-blur-lg
-        h-[70px] flex-row items-center px-6 py-2 justify-between`}
+      className={`w-full z-30 fixed flex backdrop-blur-lg h-[70px] flex-row items-center p-4 justify-between`}
     >
       <img src="../../logo.svg" className="w-[60px] h-[60px]" alt="" />
       <img
