@@ -13,6 +13,16 @@ import About from "./Components/about";
 import { ToastContainer } from "react-toastify";
 
 function App() {
+  const downloadFileAtUrl=()=>{
+    const resume = '../../resume.docx'
+    const filename = 'Toni-Odujinrin-resume'
+     const aTag = document.createElement('a')
+     aTag.href= resume
+     aTag.setAttribute('download',filename)
+     document.body.appendChild(aTag)
+     aTag.click()
+     aTag.remove()
+  }
   useEffect(() => {
     Aos.init();
   });
@@ -43,7 +53,7 @@ function App() {
           <a onClick={() => setMenu(false)} href="#projects">
             <li>Projects</li>
           </a>
-          <li className="h-[40px] w-[90px] flex items-center justify-center rounded-sm border border-aquamarine ">
+          <li onClick={()=>downloadFileAtUrl()} className="h-[40px] w-[90px] flex items-center justify-center rounded-sm border border-aquamarine ">
             <p className="text-aquamarine">Resume</p>
           </li>
         </ul>
@@ -65,7 +75,7 @@ function App() {
         <Skills />
         <Projects />
         <Find />
-        <div className="w-full flex flex-row justify-between p-4">
+        <div className="w-full flex lg:flex-row justify-between p-4">
           <div className="w-1/3"></div>
           <p className="text-olive w-1/3">
             Designed and built by Toni Odujinrin. 2023
