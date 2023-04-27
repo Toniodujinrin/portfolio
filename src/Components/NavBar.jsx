@@ -1,6 +1,15 @@
 import React from "react";
 
 const NavBar = ({ setMenu }) => {
+  const downloadResume = () => {
+    const aTag = document.createElement("a");
+    aTag.href = "../../resume.docx";
+    aTag.setAttribute("download", "Toni-odujinrin-resume");
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
+
   return (
     <nav
       className={`w-full z-30 fixed flex backdrop-blur-lg h-[70px] flex-row items-center p-4 justify-between`}
@@ -25,7 +34,10 @@ const NavBar = ({ setMenu }) => {
         <a href="#projects">
           <li>Projects</li>
         </a>
-        <li className="h-[40px] w-[90px] flex items-center justify-center rounded-sm border border-aquamarine ">
+        <li
+          onClick={() => downloadResume()}
+          className="h-[40px] w-[90px] flex items-center justify-center rounded-sm border border-aquamarine "
+        >
           <p className="text-aquamarine">Resume</p>
         </li>
       </ul>

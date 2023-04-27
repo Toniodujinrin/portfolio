@@ -17,6 +17,14 @@ function App() {
     Aos.init();
   });
   const [menu, setMenu] = useState(false);
+  const downloadResume = () => {
+    const aTag = document.createElement("a");
+    aTag.href = "../../resume.docx";
+    aTag.setAttribute("download", "Toni-odujinrin-resume");
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
 
   return (
     <div
@@ -43,7 +51,12 @@ function App() {
           <a onClick={() => setMenu(false)} href="#projects">
             <li>Projects</li>
           </a>
-          <li className="h-[40px] w-[90px] flex items-center justify-center rounded-sm border border-aquamarine ">
+          <li
+            onClick={() => {
+              downloadResume();
+            }}
+            className="h-[40px] w-[90px] flex items-center justify-center rounded-sm border border-aquamarine "
+          >
             <p className="text-aquamarine">Resume</p>
           </li>
         </ul>
