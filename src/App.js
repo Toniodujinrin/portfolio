@@ -65,7 +65,29 @@ function App() {
         <Skills />
         <Projects />
         <Find />
-        <ul></ul>
+        <div className="w-full flex flex-row justify-between p-4">
+          <div className="w-1/3"></div>
+          <p className="text-olive w-1/3">
+            Designed and built by Toni Odujinrin. 2023
+          </p>
+          <ul className="flex w-1/3 justify-end flex-row pr-4 space-x-4">
+            <img
+              src="../../linkedin.svg"
+              className={"w-[30px] h-[30px]"}
+              alt=""
+            />
+            <img
+              src="../../github.svg "
+              className={"w-[30px] h-[30px]"}
+              alt=""
+            />
+            <img
+              src="../../instagram.svg"
+              className={"w-[30px] h-[30px]"}
+              alt=""
+            />
+          </ul>
+        </div>
       </div>
     </div>
   );
