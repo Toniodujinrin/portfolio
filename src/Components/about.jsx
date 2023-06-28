@@ -17,10 +17,10 @@ const About = () => {
         <p>About Me</p>
       </h1>
       <p className="text-white lg:w-[50%] w-full ">
-        Hey, my name is Toni. I love programmin and solving probles with
-        software. I started programming in 2021 and I absolutely fell in love
+        Hey, my name is Toni. I love programming and solving problems with
+        software. I started programming in 2020 and I absolutely fell in love
         with it. I started out with building simple websites with HTML and CSS
-        for fun, and now I can build full stack web applications.
+        for fun, and now I can build full stack applications.
       </p>
     </div>
   );
