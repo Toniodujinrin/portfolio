@@ -25,7 +25,7 @@ const Project = ({
         </div>
         <ul className="flex flex-row space-x-3">
           <a href={github}>
-            <img src="../../gitHub.svg" className="w-[25px] h-[25px]" alt="" />
+            <img src="../../github.svg" className="w-[25px] h-[25px]" alt="" />
           </a>
           <a href={link}>
             <img src="../../link.svg" className="w-[25px] h-[25px]" alt="" />

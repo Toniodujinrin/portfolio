@@ -27,14 +27,7 @@ function App() {
     Aos.init();
   });
   const [menu, setMenu] = useState(false);
-  const downloadResume = () => {
-    const aTag = document.createElement("a");
-    aTag.href = "../../resume.docx";
-    aTag.setAttribute("download", "Toni-odujinrin-resume");
-    document.body.appendChild(aTag);
-    aTag.click();
-    aTag.remove();
-  };
+ 
 
   return (
     <div
@@ -83,12 +76,15 @@ function App() {
         <Skills />
         <Projects />
         <Find />
+        <div>
+          
+        </div>
         <div className="w-full flex lg:flex-row justify-between p-4">
-          <div className="w-1/3"></div>
-          <div className="text-olive w-1/3 flex items-center justify-center">
+          <div className="lg:block hidden w-1/3"></div>
+          <div className="text-olive w-1/2 lg:w-1/3 flex items-center justify-center">
             <p> Designed and built by Toni Odujinrin. 2023 </p>
           </div>
-          <ul className="flex w-1/3 justify-end flex-row pr-4 space-x-4">
+          <ul className="flex lg:w-1/3 w-1/2 justify-end flex-row pr-4 space-x-4">
             <a href="https://www.linkedin.com/in/toni-odujinrin-02a80b232/">
             <img
               src="../../linkedin.svg"
@@ -103,7 +99,7 @@ function App() {
               alt=""
             />
             </a>
-            <a href="">
+            <a href="/">
             <img
               src="../../instagram.svg"
               className={"w-[30px] h-[30px]"}
