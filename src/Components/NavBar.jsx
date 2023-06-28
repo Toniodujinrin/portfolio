@@ -23,7 +23,7 @@ const NavBar = ({ setMenu }) => {
         src="../../hamburger.svg"
         alt=""
       />
-      <ul className="text-olive cursor-pointer  space-x-6 items-center hidden lg:flex flex-row ">
+      <ul className="text-olive cursor-pointer pr-4  space-x-6 items-center hidden lg:flex flex-row ">
         <a href="#about">
           <li>About</li>
         </a>
@@ -36,7 +36,7 @@ const NavBar = ({ setMenu }) => {
         <a href="#projects">
           <li>Projects</li>
         </a>
-        <li onClick ={()=>downloadFileAtUrl()} className="h-[40px] w-[90px] flex items-center justify-center rounded-sm border border-aquamarine ">
+        <li onClick ={()=>downloadFileAtUrl()} className="h-[40px] w-[90px]  flex items-center justify-center rounded-sm border border-aquamarine ">
           <p className="text-aquamarine">Resume</p>
         </li>
       </ul>

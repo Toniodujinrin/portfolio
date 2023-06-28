@@ -8,11 +8,12 @@ const Find = () => {
   const [message, setMessage] = useState("");
   const [sender, setSender] = useState("");
   const [email, setEmail] = useState("");
-
+  const [loading,setLoading]= useState(false)
   const sendMail = async () => {
     if (sender.length > 0 && email.length > 0 && message.length > 0) {
       const payload = { message: message, sender: sender, email: email };
       try {
+        setLoading(true)
         const status = await axios.post(
           "https://portfoliobackend-ne8b.onrender.com/message",
           payload
@@ -32,6 +33,9 @@ const Find = () => {
         toast.error("Could not send message", {
           theme: "dark",
         });
+      }
+      finally{
+        setLoading(false)
       }
     } else {
       toast.error("Please comlete all fields", {
@@ -86,12 +90,21 @@ const Find = () => {
             placeholder="Email"
           />
           <button
+          disabled={loading}
             onClick={() => {
               sendMail();
             }}
             className="h-[40px] w-[100px] text-aquamarine border  border-aquamarine"
           >
-            Send
+            {
+              loading?
+            
+            <div id="loading">
+               
+            </div>
+            :
+           <p>Send</p>
+          }
           </button>
         </div>
 

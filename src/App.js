@@ -77,25 +77,31 @@ function App() {
         <Find />
         <div className="w-full flex lg:flex-row justify-between p-4">
           <div className="w-1/3"></div>
-          <p className="text-olive w-1/3">
-            Designed and built by Toni Odujinrin. 2023
-          </p>
+          <div className="text-olive w-1/3 flex items-center justify-center">
+            <p> Designed and built by Toni Odujinrin. 2023 </p>
+          </div>
           <ul className="flex w-1/3 justify-end flex-row pr-4 space-x-4">
+            <a href="https://www.linkedin.com/in/toni-odujinrin-02a80b232/">
             <img
               src="../../linkedin.svg"
               className={"w-[30px] h-[30px]"}
               alt=""
             />
+            </a>
+            <a href="https://github.com/Toniodujinrin">
             <img
               src="../../github.svg "
               className={"w-[30px] h-[30px]"}
               alt=""
             />
+            </a>
+            <a href="">
             <img
               src="../../instagram.svg"
               className={"w-[30px] h-[30px]"}
               alt=""
             />
+            </a>
           </ul>
         </div>
       </div>
