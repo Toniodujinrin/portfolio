@@ -1,6 +1,7 @@
 import React from "react";
 
 const NavBar = ({ setMenu }) => {
+<<<<<<< HEAD
   
   const resume = '../../resume.docx'
   const downloadFileAtUrl=()=>{
@@ -12,6 +13,17 @@ const NavBar = ({ setMenu }) => {
      aTag.click()
      aTag.remove()
   }
+=======
+  const downloadResume = () => {
+    const aTag = document.createElement("a");
+    aTag.href = "../../resume.docx";
+    aTag.setAttribute("download", "Toni-odujinrin-resume");
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
+
+>>>>>>> c47730d9f3b73177b1383bb3b4a533a6cd58924f
   return (
     <nav
       className={`w-full z-30 fixed flex backdrop-blur-3xl  h-[70px] flex-row items-center p-4 justify-between`}
