@@ -27,6 +27,14 @@ function App() {
     Aos.init();
   });
   const [menu, setMenu] = useState(false);
+  const downloadResume = () => {
+    const aTag = document.createElement("a");
+    aTag.href = "../../resume.docx";
+    aTag.setAttribute("download", "Toni-odujinrin-resume");
+    document.body.appendChild(aTag);
+    aTag.click();
+    aTag.remove();
+  };
 
   return (
     <div
