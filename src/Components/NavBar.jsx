@@ -2,7 +2,7 @@ import React from "react";
 
 const NavBar = ({ setMenu }) => {
   
-  const resume = '../../resume.docx'
+  const resume = '../../MainResume.pdf'
   const downloadFileAtUrl=()=>{
     const filename = 'Toni-Odujinrin-resume'
      const aTag = document.createElement('a')

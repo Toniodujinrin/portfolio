@@ -14,7 +14,7 @@ import { ToastContainer } from "react-toastify";
 
 function App() {
   const downloadFileAtUrl=()=>{
-    const resume = '../../resume.docx'
+    const resume = '../../MainResume.pdf'
     const filename = 'Toni-Odujinrin-resume'
      const aTag = document.createElement('a')
      aTag.href= resume
