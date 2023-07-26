@@ -5,6 +5,18 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
+      projectImage: "../../copit.jpg",
+      projectName: "Cop it",
+      description:
+        "This is a peer to peer trading platform were users can buy and sell used or new products.",
+      textColor: "text-white",
+      mainColor: "bg-[#6b5ce5]",
+      tools: ["Node.js", "Express", "Next.js", "Tailwind", "Mongo-DB","AWS"],
+      link: "https://copit.netlify.app/",
+      github: "https://github.com/Toniodujinrin/cop-it",
+    },
+ 
+    {
       projectImage: "../../commentSection.png",
       projectName: "Comment Section",
       description:
