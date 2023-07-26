@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div
-      className={`App bg-black  scroll-smooth
+      className={`App bg-[#181818]  scroll-smooth
      h-full  flex  ${
        menu ? "flex-row-reverse" : "flex-col items-center"
      } w-screen overflow-x-hidden min-h-screen`}
@@ -39,7 +39,7 @@ function App() {
       <div
         className={`fixed z-50 w-[60%] ${
           menu ? "flex" : "hidden"
-        } flex-col justify-center items-center bg-[#131313] h-screen `}
+        } flex-col justify-center items-center bg-appGray h-screen `}
       >
         <ul className="text-olive cursor-pointer space-y-[30px] text-[18px] items-center flex flex-col ">
           <a onClick={() => setMenu(false)} href="#about">

@@ -6,9 +6,10 @@ const Skills = () => {
   const skills = [
     {
       skill: "React",
-      rating: 80,
+      rating: 90,
       image: "../../logo192.png",
     },
+    
     {
       skill: "Node",
       rating: 90,
@@ -21,22 +22,22 @@ const Skills = () => {
     },
     {
       skill: "Next.JS",
-      rating: 60,
+      rating: 70,
       image: "../../next.svg",
     },
     {
       skill: "JavaScript",
-      rating: 90,
+      rating: 100,
       image: "../../javascript.svg",
     },
     {
       skill: "Python",
-      rating: 70,
+      rating: 100,
       image: "../../python.svg",
     },
     {
       skill: "Tailwind",
-      rating: 70,
+      rating: 100,
       image: "../../tailwind.svg",
     },
     {
@@ -44,6 +45,16 @@ const Skills = () => {
       rating: 70,
       image: "../../typescript.svg",
     },
+    {
+      skill:"Git/Github",
+      rating:80, 
+      image:"../../github.svg"
+    }, 
+    {
+      skill:"Networking", 
+      rating:90,
+      image:"../../networking.svg"
+    }
   ];
   return (
     <motion.div
@@ -52,7 +63,7 @@ const Skills = () => {
     >
       <h1
         data-aos="fade-up"
-        className=" mb-[50px]  w-full flex flex-row space-x-2 items-center  justify-center   text-olive text-[28px] "
+        className=" mb-[50px]  w-full flex flex-row space-x-2 items-center  justify-center   text-olive text-[36px] "
       >
         <motion.img
           animate={{ rotate: 360 }}

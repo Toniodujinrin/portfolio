@@ -6,7 +6,7 @@ const About = () => {
     <div id="about" className="p-8">
       <h1
         data-aos="fade-up"
-        className=" mb-[50px]  w-full flex flex-row space-x-2 items-center  justify-center   text-olive text-[28px] "
+        className=" mb-[50px]  w-full flex flex-row space-x-2 items-center  justify-center   text-olive text-[36px] "
       >
         <motion.img
           animate={{ rotate: 360 }}
@@ -22,7 +22,7 @@ const About = () => {
           alt=""
         />
       </h1>
-      <p className="text-white text-center lg:w-[50%] m-auto w-full ">
+      <p className="text-white text-[21px] text-center lg:w-[50%] m-auto w-full ">
         Hey, my name is Toni. I love programming and solving problems with
         software. I started programming in 2020 and I absolutely fell in love
         with it. I started out with building simple websites with HTML and CSS

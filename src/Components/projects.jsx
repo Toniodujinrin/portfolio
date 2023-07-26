@@ -55,7 +55,7 @@ const Projects = () => {
       <div className="w-full flex  p-8 mt-4 lg:mt-[100px] items-center mb-[20px]">
         <h1
           data-aos="fade-up"
-          className=" lg:mb-[50px]  w-full flex flex-row space-x-2 items-center justify-center  text-olive text-[28px] "
+          className=" lg:mb-[50px]  w-full flex flex-row space-x-2 items-center justify-center  text-olive text-[36px] "
         >
           <motion.img
             animate={{ rotate: 360 }}

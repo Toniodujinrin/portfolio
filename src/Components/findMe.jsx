@@ -47,7 +47,7 @@ const Find = () => {
     <div id="contact" className="flex lg:p-8 p-8 mt-[50px]  flex-col">
       <h1
         data-aos="fade-up"
-        className=" mb-[30px]  w-full flex flex-row space-x-2 items-center justify-center     text-olive text-[28px] "
+        className=" mb-[30px]  w-full flex flex-row space-x-2 items-center justify-center     text-olive text-[36px] "
       >
         <motion.img
           animate={{ rotate: 360 }}
@@ -75,7 +75,7 @@ const Find = () => {
             }}
             draggable={false}
             style={{ resize: "none", height: "200px" }}
-            className="lg:w-[90%] w-full p-3 h-[20px] text-white bg-black  outline-none border-aquamarine border focus:outline-none "
+            className="lg:w-[90%] w-full p-3 h-[20px] text-white bg-appGray  outline-none border-aquamarine border focus:outline-none "
           ></textarea>
           <input
             type="text"
@@ -83,7 +83,7 @@ const Find = () => {
             onChange={(e) => {
               setSender(e.currentTarget.value);
             }}
-            className="w-[90%] h-[40px] p-2  bg-black  text-white   focus:outline-none border-b border-b-aquamarine"
+            className="w-[90%] h-[40px] p-2  bg-appGray text-white   focus:outline-none border-b border-b-aquamarine"
             placeholder="Full Name"
           />
           <input
@@ -92,7 +92,7 @@ const Find = () => {
             onChange={(e) => {
               setEmail(e.currentTarget.value);
             }}
-            className="w-[90%] h-[40px] p-2  bg-black text-white mb-4  focus:outline-none border-b border-b-aquamarine"
+            className="w-[90%] h-[40px] p-2  bg-appGray text-white mb-4  focus:outline-none border-b border-b-aquamarine"
             placeholder="Email"
           />
           <button
@@ -100,7 +100,7 @@ const Find = () => {
             onClick={() => {
               sendMail();
             }}
-            className="h-[40px] w-[100px] text-aquamarine border  border-aquamarine"
+            className="h-[40px] w-[100px] flex items-center justify-center text-aquamarine border  border-aquamarine"
           >
             {
               loading?
@@ -120,54 +120,7 @@ const Find = () => {
             src="../../letsTalk.svg"
             alt=""
           />
-          {/*<div className="w-full h-[500px] flex-col items-center space-y-[100px] justify-center ">
-            <div className="flex flex-row lg:justify-center justify-between  lg:space-x-[200px]">
-              <motion.img
-                animate={{ y: [10, 0, 10] }}
-                transition={{ repeat: Infinity, duration: 3 }}
-                className="h-[50px] cursor-pointer w-[50px]"
-                src="../../phone.svg"
-                alt=""
-              />{" "}
-              <motion.img
-                animate={{ y: [10, 0, 10] }}
-                transition={{ repeat: Infinity, duration: 3 }}
-                className="h-[50px] cursor-pointer w-[50px]"
-                src="../../github.svg"
-                alt=""
-              />
-            </div>
-            {/* <div className="w-full flex items-center justify-center">
-              <motion.img
-                animate={
-                  {
-                    //   scale: [1, 1.5, 1],
-                  }
-                }
-                transition={{ repeat: Infinity, duration: 3 }}
-                className="h-[70px]  w-[70px]"
-                src="../../location.svg"
-                alt=""
-              />
-            </div>
-
-            <div className="flex flex-row lg:justify-center justify-between  lg:space-x-[200px]">
-              <motion.img
-                animate={{ y: [10, 0, 10] }}
-                transition={{ repeat: Infinity, duration: 3 }}
-                className="h-[70px] cursor-pointer w-[70px]"
-                src="../../linkedin.svg"
-                alt=""
-              />{" "}
-              <motion.img
-                animate={{ y: [10, 0, 10] }}
-                transition={{ repeat: Infinity, duration: 3 }}
-                className="h-[50px] cursor-pointer w-[50px]"
-                src="../../github.svg"
-                alt=""
-              />
-            </div>
-          </div>*/}
+         
         </div>
       </main>
     </div>
