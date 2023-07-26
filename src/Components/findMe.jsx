@@ -44,10 +44,10 @@ const Find = () => {
     }
   };
   return (
-    <div id="contact" className="flex lg:p-8 p-8  flex-col">
+    <div id="contact" className="flex lg:p-8 p-8 mt-[50px]  flex-col">
       <h1
         data-aos="fade-up"
-        className=" mb-[30px] lg:w-[60%] w-full flex flex-row space-x-2 items-center  border-b border-b-aquamarine  text-olive text-[24px] "
+        className=" mb-[30px]  w-full flex flex-row space-x-2 items-center justify-center     text-olive text-[28px] "
       >
         <motion.img
           animate={{ rotate: 360 }}
@@ -56,6 +56,12 @@ const Find = () => {
           alt=""
         />
         <p>Lets Talk</p>
+        <motion.img
+          animate={{ rotate: 360 }}
+          transition={{ duration: 3, repeat: Infinity }}
+          src="../../logo.svg"
+          alt=""
+        />
       </h1>
       <main className="flex lg:flex-row flex-col items-center lg:justify-between">
         <div className="lg:w-[50%] lg:p-4 w-full  ">
@@ -69,7 +75,7 @@ const Find = () => {
             }}
             draggable={false}
             style={{ resize: "none", height: "200px" }}
-            className="lg:w-[90%] w-full p-2 h-[20px] text-white bg-black rounded-[15px] outline-none border-aquamarine border focus:outline-none "
+            className="lg:w-[90%] w-full p-3 h-[20px] text-white bg-black  outline-none border-aquamarine border focus:outline-none "
           ></textarea>
           <input
             type="text"

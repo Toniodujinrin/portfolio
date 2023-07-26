@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div
-      className={`App bg-black scroll-smooth
+      className={`App bg-black  scroll-smooth
      h-full  flex  ${
        menu ? "flex-row-reverse" : "flex-col items-center"
      } w-screen overflow-x-hidden min-h-screen`}

@@ -55,7 +55,7 @@ const Projects = () => {
       <div className="w-full flex  p-8 mt-4 lg:mt-[100px] items-center mb-[20px]">
         <h1
           data-aos="fade-up"
-          className=" lg:mb-[50px] lg:w-[60%] w-full flex flex-row space-x-2 items-center  border-b border-b-aquamarine  text-olive text-[24px] "
+          className=" lg:mb-[50px]  w-full flex flex-row space-x-2 items-center justify-center  text-olive text-[28px] "
         >
           <motion.img
             animate={{ rotate: 360 }}
@@ -64,6 +64,12 @@ const Projects = () => {
             alt=""
           />
           <p>Selected Projects</p>
+          <motion.img
+            animate={{ rotate: 360 }}
+            transition={{ duration: 3, repeat: Infinity }}
+            src="../../logo.svg"
+            alt=""
+          />
         </h1>
       </div>
       <div className="w-full h-full p-4 flex flex-col items-center space-y-6   ">

@@ -52,7 +52,7 @@ const Skills = () => {
     >
       <h1
         data-aos="fade-up"
-        className=" mb-[50px] lg:w-[60%] w-full flex flex-row space-x-2 items-center  border-b border-b-aquamarine  text-olive text-[24px] "
+        className=" mb-[50px]  w-full flex flex-row space-x-2 items-center  justify-center   text-olive text-[28px] "
       >
         <motion.img
           animate={{ rotate: 360 }}
@@ -61,6 +61,12 @@ const Skills = () => {
           alt=""
         />
         <p>Skills In My Locker</p>
+        <motion.img
+          animate={{ rotate: 360 }}
+          transition={{ duration: 3, repeat: Infinity }}
+          src="../../logo.svg"
+          alt=""
+        />
       </h1>
       <div
         data-aos="fade-up"
