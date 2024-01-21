@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 import axios from "axios";
 import { toast } from "react-toastify";
+import Header from "./reusables/header";
 
 const Find = () => {
   const [message, setMessage] = useState("");
@@ -44,24 +45,7 @@ const Find = () => {
   };
   return (
     <div id="contact" className="flex lg:p-8 p-8 mt-[50px]  flex-col">
-      <h1
-        data-aos="fade-up"
-        className=" mb-[30px]  w-full flex flex-row space-x-2 items-center justify-center     text-olive text-[36px] "
-      >
-        <motion.img
-          animate={{ rotate: 360 }}
-          transition={{ duration: 3, repeat: Infinity }}
-          src="../../logo.svg"
-          alt=""
-        />
-        <p>Lets Talk</p>
-        <motion.img
-          animate={{ rotate: 360 }}
-          transition={{ duration: 3, repeat: Infinity }}
-          src="../../logo.svg"
-          alt=""
-        />
-      </h1>
+      <Header title={"lets talk"} />
       <main className="flex lg:flex-row flex-col items-center lg:justify-between">
         <div className="lg:w-[50%] lg:p-4 w-full  ">
           <textarea
@@ -99,7 +83,9 @@ const Find = () => {
             onClick={() => {
               sendMail();
             }}
-            className="h-[40px] w-[100px] flex items-center justify-center text-aquamarine border  border-aquamarine"
+            className={`h-[40px] w-[100px] hover:text-mainGray transition-[5000ms] font-semibold ${
+              !loading && "hover:bg-aquamarine"
+            }  flex items-center justify-center text-aquamarine border  border-aquamarine`}
           >
             {loading ? <div id="loading"></div> : <p>Send</p>}
           </button>

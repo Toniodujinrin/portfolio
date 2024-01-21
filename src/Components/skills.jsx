@@ -1,6 +1,7 @@
 import React from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
 import { motion } from "framer-motion";
+import Header from "./reusables/header";
 
 const Skills = () => {
   const skills = [
@@ -9,7 +10,7 @@ const Skills = () => {
       rating: 90,
       image: "../../logo192.png",
     },
-    
+
     {
       skill: "Node",
       rating: 90,
@@ -46,39 +47,22 @@ const Skills = () => {
       image: "../../typescript.svg",
     },
     {
-      skill:"Git/Github",
-      rating:80, 
-      image:"../../github.svg"
-    }, 
+      skill: "Git/Github",
+      rating: 80,
+      image: "../../github.svg",
+    },
     {
-      skill:"Networking", 
-      rating:90,
-      image:"../../networking.svg"
-    }
+      skill: "Networking",
+      rating: 90,
+      image: "../../networking.svg",
+    },
   ];
   return (
     <motion.div
       id="skills"
-      className="lg:mb-[50px] mb-4 lg:p-8 p-8 lg:mt-[100px] mt-[60px] "
+      className="lg:mb-[50px] mb-4 lg:p-8 p-8 lg:mt-[50px] mt-[30px] "
     >
-      <h1
-        data-aos="fade-up"
-        className=" mb-[50px]  w-full flex flex-row space-x-2 items-center  justify-center   text-olive text-[36px] "
-      >
-        <motion.img
-          animate={{ rotate: 360 }}
-          transition={{ duration: 3, repeat: Infinity }}
-          src="../../logo.svg"
-          alt=""
-        />
-        <p>Skills In My Locker</p>
-        <motion.img
-          animate={{ rotate: 360 }}
-          transition={{ duration: 3, repeat: Infinity }}
-          src="../../logo.svg"
-          alt=""
-        />
-      </h1>
+      <Header title={"skills"} />
       <div
         data-aos="fade-up"
         className="grid gap-4 grid-cols-2 mb-[50px] lg:grid-cols-3 justify-items-center"

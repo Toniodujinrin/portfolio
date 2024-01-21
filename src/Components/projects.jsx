@@ -1,6 +1,7 @@
 import React from "react";
 import Project from "./project";
 import { motion } from "framer-motion";
+import Header from "./reusables/header";
 
 const Projects = () => {
   const projects = [
@@ -11,22 +12,22 @@ const Projects = () => {
         "This is a peer to peer trading platform were users can buy and sell used or new products.",
       textColor: "text-white",
       mainColor: "bg-[#6b5ce5]",
-      tools: ["Node.js", "Express", "Next.js", "Tailwind", "Mongo-DB","AWS"],
+      tools: ["Node.js", "Express", "Next.js", "Tailwind", "Mongo-DB", "AWS"],
       link: "https://copit.netlify.app/",
       github: "https://github.com/Toniodujinrin/cop-it",
     },
- 
-    {
-      projectImage: "../../commentSection.png",
-      projectName: "Comment Section",
-      description:
-        "My first Project! This is a fully front end project which showcases all CRUD functionalities",
-      textColor: "text-white",
-      mainColor: "bg-[#6b5ce5]",
-      tools: ["React", "Tailwind"],
-      link: "https://toniodujinrincommentsection.netlify.app/",
-      github: "https://github.com/Toniodujinrin",
-    },
+
+    // {
+    //   projectImage: "../../commentSection.png",
+    //   projectName: "Comment Section",
+    //   description:
+    //     "My first Project! This is a fully front end project which showcases all CRUD functionalities",
+    //   textColor: "text-white",
+    //   mainColor: "bg-[#6b5ce5]",
+    //   tools: ["React", "Tailwind"],
+    //   link: "https://toniodujinrincommentsection.netlify.app/",
+    //   github: "https://github.com/Toniodujinrin",
+    // },
     {
       projectImage: "../../timeline.png",
       projectName: "Timeline",
@@ -38,39 +39,22 @@ const Projects = () => {
       link: "https://timeline-ten.vercel.app/",
       github: "https://github.com/Toniodujinrin/todoBackend",
     },
-    {
-      projectImage: "../../countries.png",
-      projectName: "Countries",
-      description:
-        "This is a front-end project which gives information about any country in the world! ",
-      textColor: "text-black",
-      mainColor: "bg-[#f1f1f1]",
-      tools: ["React", "CSS", "API's"],
-      link: "https://toniodujinrincountriesapi.netlify.app/",
-      github: "https://github.com/Toniodujinrin/countries-",
-    },
+    // {
+    //   projectImage: "../../countries.png",
+    //   projectName: "Countries",
+    //   description:
+    //     "This is a front-end project which gives information about any country in the world! ",
+    //   textColor: "text-black",
+    //   mainColor: "bg-[#f1f1f1]",
+    //   tools: ["React", "CSS", "API's"],
+    //   link: "https://toniodujinrincountriesapi.netlify.app/",
+    //   github: "https://github.com/Toniodujinrin/countries-",
+    // },
   ];
   return (
     <div id="projects">
-      <div className="w-full flex  p-8 mt-4 lg:mt-[100px] items-center mb-[20px]">
-        <h1
-          data-aos="fade-up"
-          className=" lg:mb-[50px]  w-full flex flex-row space-x-2 items-center justify-center  text-olive text-[36px] "
-        >
-          <motion.img
-            animate={{ rotate: 360 }}
-            transition={{ duration: 3, repeat: Infinity }}
-            src="../../logo.svg"
-            alt=""
-          />
-          <p>Selected Projects</p>
-          <motion.img
-            animate={{ rotate: 360 }}
-            transition={{ duration: 3, repeat: Infinity }}
-            src="../../logo.svg"
-            alt=""
-          />
-        </h1>
+      <div className="w-full flex  p-8 mt-4 lg:mt-[50px] items-center mb-[20px]">
+        <Header title={"selected projects"} />
       </div>
       <div className="w-full h-full p-4 flex flex-col items-center space-y-6   ">
         {projects.map((project, index) => (
