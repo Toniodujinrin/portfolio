@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import Header from "./reusables/header";
 
 const About = () => {

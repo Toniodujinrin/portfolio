@@ -1,6 +1,5 @@
 import React from "react";
 import Project from "./project";
-import { motion } from "framer-motion";
 import Header from "./reusables/header";
 
 const Projects = () => {
