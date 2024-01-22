@@ -60,7 +60,7 @@ const Skills = () => {
   return (
     <motion.div
       id="skills"
-      className="lg:mb-[50px] mb-4 lg:p-8 p-8 lg:mt-[50px] mt-[30px] "
+      className="lg:mb-[50px] mb-4  p-2 lg:mt-[50px] mt-[30px] "
     >
       <Header title={"skills"} />
       <div

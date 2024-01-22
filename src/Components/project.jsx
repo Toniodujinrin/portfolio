@@ -1,8 +1,6 @@
 import React from "react";
 
 const Project = ({
-  mainColor,
-  textColor,
   projectName,
   description,
   tools,
@@ -12,13 +10,13 @@ const Project = ({
 }) => {
   return (
     <div className="flex flex-row">
-      <div className="lg:bg-transparent bg-[#0a2427] lg:p-0 p-4">
+      <div className="lg:bg-transparent w-[300px]  lg:w-auto bg-darkGreen lg:p-0 p-4 flex flex-col">
         <h1 className="text-olive mb-[20px] text-[24px]">{projectName}</h1>
 
-        <div className="lg:w-[400px] mr-4 z-40 mb-4 bg-[#0a2427] backdrop:blur-md lg:p-4 rounded-md font-semibold  text-white lg:h-[150px]">
+        <div className="lg:w-[400px] lg:mr-4  mb-4 bg-darkGreen  lg:p-4 rounded-md font-semibold  text-white lg:h-[150px]">
           {description}
         </div>
-        <div className=" w-[300px] inline-block space-x-2  mb-2 flex-row ">
+        <div className=" max-w-[400px] flex flex-wrap space-x-2  mb-2 ">
           {tools.map((tool) => (
             <span className="text-olive">{tool}</span>
           ))}
@@ -32,10 +30,10 @@ const Project = ({
           </a>
         </ul>
       </div>
-      <div className="lg:block hidden backdrop-blur-xl opacity-40 w-[600px] h-[400px]   hover:opacity-100 transition-[3000ms] hover:bg-none  z-20 ">
+      <div className="lg:block hidden  opacity-40 w-[600px] h-[400px] hover:opacity-100 transition-[5000ms]  ">
         <a href={link}>
           <img
-            className="z-10 opacity-50 hover:opacity-100 object-cover h-full w-full transition-[3000ms]"
+            className="opacity-50 hover:opacity-100 object-cover h-full w-full transition-[3000ms]"
             src={projectImage}
             alt=""
           />

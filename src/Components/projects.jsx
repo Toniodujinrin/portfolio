@@ -1,4 +1,5 @@
 import React from "react";
+import MiniProject from "./miniProject";
 import Project from "./project";
 import Header from "./reusables/header";
 
@@ -38,24 +39,35 @@ const Projects = () => {
       link: "https://timeline-ten.vercel.app/",
       github: "https://github.com/Toniodujinrin/todoBackend",
     },
-    // {
-    //   projectImage: "../../countries.png",
-    //   projectName: "Countries",
-    //   description:
-    //     "This is a front-end project which gives information about any country in the world! ",
-    //   textColor: "text-black",
-    //   mainColor: "bg-[#f1f1f1]",
-    //   tools: ["React", "CSS", "API's"],
-    //   link: "https://toniodujinrincountriesapi.netlify.app/",
-    //   github: "https://github.com/Toniodujinrin/countries-",
-    // },
+  ];
+
+  const miniProjects = [
+    {
+      projectName: "netmapper",
+      description:
+        "This is a networking tool for mapping out a network, usefull for network admins",
+      textColor: "text-black",
+      mainColor: "bg-[#f1f1f1]",
+      tools: ["Python", "Scapy"],
+      github: "https://github.com/Toniodujinrin/netmaper",
+    },
+    {
+      projectName: "Countries",
+      description:
+        "This is a front-end project which gives information about any country in the world! ",
+      textColor: "text-black",
+      mainColor: "bg-[#f1f1f1]",
+      tools: ["React", "CSS", "API's"],
+      link: "https://toniodujinrincountriesapi.netlify.app/",
+      github: "https://github.com/Toniodujinrin/countries-",
+    },
   ];
   return (
     <div id="projects">
-      <div className="w-full flex  p-8 mt-4 lg:mt-[50px] items-center mb-[20px]">
-        <Header title={"selected projects"} />
+      <div className="w-full flex px-2 mt-4 lg:mt-[50px] items-center ">
+        <Header title={"projects"} />
       </div>
-      <div className="w-full h-full p-4 flex flex-col items-center space-y-6   ">
+      <div className="w-full h-full px-4 flex flex-col items-center space-y-6 mb-4   ">
         {projects.map((project, index) => (
           <div id={index}>
             <div
@@ -75,6 +87,18 @@ const Projects = () => {
               />
             </div>
           </div>
+        ))}
+      </div>
+
+      <div className="flex px-4 flex-col w-full items-center space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4">
+        {miniProjects.map((project) => (
+          <MiniProject
+            projectName={project.projectName}
+            description={project.description}
+            github={project.github}
+            tools={project.tools}
+            link={project.link}
+          />
         ))}
       </div>
     </div>

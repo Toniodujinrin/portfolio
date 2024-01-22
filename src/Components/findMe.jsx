@@ -13,15 +13,14 @@ const Find = () => {
       const payload = { message: message, sender: sender, email: email };
       try {
         setLoading(true);
-        const status = await axios.post(
+        const { status } = await axios.post(
           "https://portfolio-backend-gilt-nu.vercel.app/message",
           payload
         );
-        if (status.status === 200) {
+        if (status === 200) {
           toast.success("Message Sent", {
             theme: "dark",
           });
-          console.log(status);
         } else {
           toast.error("Could not send message", {
             theme: "dark",
@@ -42,9 +41,9 @@ const Find = () => {
     }
   };
   return (
-    <div id="contact" className="flex lg:p-8 p-8 mt-[50px]  flex-col">
+    <div id="contact" className="flex  p-2 mt-[50px]  flex-col w-full">
       <Header title={"lets talk"} />
-      <main className="flex lg:flex-row flex-col items-center lg:justify-between">
+      <main className="flex lg:flex-row flex-col items-center w-full lg:justify-between">
         <div className="lg:w-[50%] lg:p-4 w-full  ">
           <textarea
             placeholder="Send me a message"
