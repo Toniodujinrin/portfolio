@@ -10,7 +10,7 @@ const Project = ({
 }) => {
   return (
     <div className="flex flex-row">
-      <div className="lg:bg-transparent w-[300px]  lg:w-auto bg-darkGreen lg:p-0 p-4 flex flex-col">
+      <div className="lg:bg-transparent w-[300px] lg:w-auto bg-darkGreen lg:p-0 p-4 flex flex-col">
         <h1 className="text-olive mb-[20px] text-[24px]">{projectName}</h1>
 
         <div className="lg:w-[400px] lg:mr-4  mb-4 bg-darkGreen  lg:p-4 rounded-md font-semibold  text-white lg:h-[150px]">

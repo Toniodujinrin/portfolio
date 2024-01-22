@@ -11,7 +11,8 @@ module.exports = {
         lightGray: "#bebebe",
         olive: "#a2aead",
         timeline: "#ff9900",
-        appGray:"#131313"
+        appGray: "#131313",
+        darkGreen: "#0a2427",
       },
     },
   },

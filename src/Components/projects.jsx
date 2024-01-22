@@ -6,6 +6,28 @@ import Header from "./reusables/header";
 const Projects = () => {
   const projects = [
     {
+      projectImage: "../../meetup.png",
+      projectName: "Meet up",
+      description:
+        "This is an instant messaging platform with end to end encryption texts and calls. It is available as a mobile app and web client",
+      textColor: "text-white",
+      mainColor: "bg-[#6b5ce5]",
+      tools: [
+        "TypeScript",
+        "Javascript",
+        "Node.js",
+        "WebRTC",
+        "Socket.io",
+        "AWS EC2",
+        "React Native",
+        "Mongo-DB",
+        "React",
+        "Tailwind",
+      ],
+      link: "https://meet-up-client.vercel.app/",
+      github: "https://github.com/Toniodujinrin/meetup",
+    },
+    {
       projectImage: "../../copit.jpg",
       projectName: "Cop it",
       description:
@@ -17,17 +39,6 @@ const Projects = () => {
       github: "https://github.com/Toniodujinrin/cop-it",
     },
 
-    // {
-    //   projectImage: "../../commentSection.png",
-    //   projectName: "Comment Section",
-    //   description:
-    //     "My first Project! This is a fully front end project which showcases all CRUD functionalities",
-    //   textColor: "text-white",
-    //   mainColor: "bg-[#6b5ce5]",
-    //   tools: ["React", "Tailwind"],
-    //   link: "https://toniodujinrincommentsection.netlify.app/",
-    //   github: "https://github.com/Toniodujinrin",
-    // },
     {
       projectImage: "../../timeline.png",
       projectName: "Timeline",
@@ -49,7 +60,7 @@ const Projects = () => {
       textColor: "text-black",
       mainColor: "bg-[#f1f1f1]",
       tools: ["Python", "Scapy"],
-      github: "https://github.com/Toniodujinrin/netmaper",
+      github: "https://github.com/Toniodujinrin/netmapper",
     },
     {
       projectName: "Countries",
